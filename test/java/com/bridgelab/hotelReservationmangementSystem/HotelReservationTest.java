@@ -1,15 +1,15 @@
 package com.bridgelab.hotelReservationmangementSystem;
 
-import static org.junit.Assert.*;
-
 import org.junit.Test;
-
-import org.junit.Assert;
+import java.util.ArrayList;
 import org.junit.Before;
 
 public class HotelReservationTest {
-	
+
+	ArrayList<Hotel> hotelList = new ArrayList<>();
 	Hotel hotel1 = new Hotel("LakeWood", 110);
+	Hotel hotel2 = new Hotel("Bridgewood", 160);
+	Hotel hotel3 = new Hotel("Ridgewood.", 220);
 	HotelReservation hotelReservation = null;
 
 	@Before
@@ -18,9 +18,10 @@ public class HotelReservationTest {
 	}
 
 	@Test
-	public void Hotelreservation() {
-		boolean welcome = hotelReservation.printWelcome();
-		Assert.assertEquals(true, welcome);
+	public void addthehotels() {
+		hotelList.add(hotel1);
+		hotelList.add(hotel2);
+		hotelList.add(hotel3);
 	}
 
 }
