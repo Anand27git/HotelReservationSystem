@@ -1,9 +1,18 @@
 package com.bridgelab.hotelReservationmangementSystem;
 
+/***********
+ * 
+ * @author ANAND purpose:Workshop of Hotel Reservation Management
+ *
+ */
 public class HotelReservation {
-
-	public static void main(String orgs[])
-	{
+	// main method
+	public static void main(String orgs[]) {
 		System.out.println("Welcome to Hotel Reservation Management System");
+	}
+
+	public boolean printWelcome() {
+		
+		return true;
 	}
 }
